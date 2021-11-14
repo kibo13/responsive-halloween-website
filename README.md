@@ -1,24 +1,27 @@
-# responsive-halloween-website
+# Responsive Halloween Website
 
-## Project setup
-```
+- Responsive Halloween Website using framework - Vue.js.
+- Contains animations when scrolling.
+- It has three color designs (green, red and black)
+- Smooth scrolling in each section.
+- Developed first with the Mobile First methodology, then for desktop.
+- Compatible with all mobile devices and with a beautiful and pleasant user interface.
+
+## Quick Start
+
+```bash
+# download or clone repository
+git clone https://github.com/kibo13/responsive-halloween-website.git
+
+# install dependencies
 npm install
-```
 
-### Compiles and hot-reloads for development
-```
+# compiles and hot-reloads for development
 npm run serve
-```
 
-### Compiles and minifies for production
-```
+# compiles and minifies for production
 npm run build
-```
 
-### Lints and fixes files
-```
+# lints and fixes files
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
