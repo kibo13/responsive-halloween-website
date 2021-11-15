@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <h2 class="intro">Halloween Website</h2>
+    <box-icon type="logo" name="docker"></box-icon>
     <Home />
   </div>
 </template>
