@@ -2,42 +2,30 @@
     <div>
         <nav class="nav container">
             <a href="#" class="nav__logo">
-                <img
-                    src="../assets/images/logo.png"
-                    alt=""
-                    class="nav__logo-img"
-                />
+                <img src="../assets/images/logo.png" alt="" class="nav__logo-img" />
                 Halloween
             </a>
 
             <div class="nav__menu" ref="menu">
                 <ul class="nav__list">
                     <li class="nav__item" v-for="item in items" :key="item.id">
-                        <a
-                            class="nav__link"
-                            :href="`#${item.name}`"
-                            @click="closeMenu"
-                        >
+                        <a class="nav__link" :href="`#${item.name}`" @click="closeMenu">
                             {{ item.name }}
                         </a>
                     </li>
 
-                    <a href="#" class="button button-ghost">Support</a>
+                    <a href="#" class="button button--ghost">Support</a>
                 </ul>
 
                 <button class="nav__close" @click="closeMenu">
-                    <box-icon name="x"></box-icon>
+                    <box-icon name="x" color="white"></box-icon>
                 </button>
 
-                <img
-                    src="../assets/images/nav-img.png"
-                    alt=""
-                    class="nav__img"
-                />
+                <img src="../assets/images/nav-img.png" alt="" class="nav__img" />
             </div>
 
             <button class="nav__toggle" @click="showMenu">
-                <box-icon name="grid-alt"></box-icon>
+                <box-icon name="grid-alt" color="white"></box-icon>
             </button>
         </nav>
     </div>
@@ -50,23 +38,10 @@ export default {
     data() {
         return {
             items: [
-                {
-                    id: 1,
-                    name: 'home',
-                },
-
-                {
-                    id: 2,
-                    name: 'about',
-                },
-                {
-                    id: 3,
-                    name: 'trick',
-                },
-                {
-                    id: 4,
-                    name: 'new',
-                },
+                { id: 1, name: 'home' },
+                { id: 2, name: 'about' },
+                { id: 3, name: 'trick' },
+                { id: 4, name: 'new' },
             ],
         }
     },
