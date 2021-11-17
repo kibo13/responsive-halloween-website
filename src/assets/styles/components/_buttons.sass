@@ -1,0 +1,28 @@
+.button
+    padding: 1rem 1.75rem
+    display: inline-block
+    background-color: var(--first-color)
+    color: var(--title-color)
+    font-weight: var(--font-medium)
+    border-radius: .5rem    
+    transition: .3s
+
+    &:hover 
+        background-color: var(--first-color-alt)
+    
+    &--ghost
+        padding: .75rem 1.5rem
+        border: 2px solid 
+        background-color: transparent
+        border-radius: 3rem 
+
+        &:hover 
+            background: none
+
+    &--link 
+        color: var(--title-color)
+
+    &--flex 
+        display: inline-flex
+        align-items: center
+        column-gap: .5rem
