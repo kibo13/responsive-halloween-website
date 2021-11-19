@@ -1,0 +1,69 @@
+.new-arrivals 
+    
+    &__container 
+        padding-top: 1rem
+
+    &__img 
+        margin-bottom: var(--mb-0-5)
+        width: 120px
+        transition: .3s 
+    
+    &__content 
+        position: relative
+        padding: 2rem 0 1.5rem 0 
+        width: 242px
+        text-align: center
+        background: var(--container-color)
+        border-radius: .75rem 
+        overflow: hidden
+        cursor: pointer
+
+        &:hover 
+            .new-arrivals__img 
+                transform: translateY(-.5rem)
+            .new-arrivals__button 
+                right: 0
+    
+    &__tag 
+        position: absolute
+        top: 8%
+        left: 8%
+        padding: 0.25rem 0.5rem
+        font-size: var(--small-font-size)
+        color: var(--title-color)
+        background-color: var(--first-color)
+        border-radius: .25rem 
+
+    &__title 
+        font-size: var(--normal-font-size)
+        font-weight: var(--font-medium)
+
+    &__subtitle 
+        margin-bottom: var(--mb-0-5)
+        display: block
+        font-size: var(--small-font-size)
+
+    &__prices 
+        display: inline-flex
+        align-items: center
+        column-gap: .5rem
+
+    &__price 
+        text-decoration: line-through
+        font-size: var(--smaller-font-size)
+        font-weight: var(--font-medium)
+        color: var(--first-color)
+
+    &__discount 
+        font-weight: var(--font-medium)
+        color: var(--title-color)
+
+    &__button 
+        position: absolute
+        right: -3rem
+        bottom: 0
+        padding: 0.5rem
+        display: inline-flex
+        border-radius: .25rem .25rem .75rem .25rem
+
+

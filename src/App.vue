@@ -10,6 +10,7 @@
             <About />
             <Trick />
             <Discount />
+            <NewArrivals />
         </main>
     </div>
 </template>
@@ -22,6 +23,7 @@ import Category from '@/blocks/Category'
 import About from '@/blocks/About'
 import Trick from '@/blocks/Trick'
 import Discount from '@/blocks/Discount'
+import NewArrivals from '@/blocks/NewArrivals'
 
 export default {
     name: 'App',
@@ -33,6 +35,7 @@ export default {
         About,
         Trick,
         Discount,
+        NewArrivals,
     },
 
     data() {
