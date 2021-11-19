@@ -6,13 +6,16 @@
 
         <main class="main">
             <Category />
+            <About />
         </main>
     </div>
 </template>
 
 <script>
-import Navbar from '@/components/Navbar.vue'
-import Category from '@/pages/Category.vue'
+import Navbar from '@/components/Navbar'
+
+import Category from '@/pages/Category'
+import About from '@/pages/About'
 
 export default {
     name: 'App',
@@ -20,6 +23,7 @@ export default {
     components: {
         Navbar,
         Category,
+        About,
     },
 
     data() {
