@@ -8,6 +8,7 @@
             <Category />
             <About />
             <Trick />
+            <Discount />
         </main>
     </div>
 </template>
@@ -18,6 +19,7 @@ import Navbar from '@/components/Navbar'
 import Category from '@/blocks/Category'
 import About from '@/blocks/About'
 import Trick from '@/blocks/Trick'
+import Discount from '@/blocks/Discount'
 
 export default {
     name: 'App',
@@ -27,6 +29,7 @@ export default {
         Category,
         About,
         Trick,
+        Discount,
     },
 
     data() {
