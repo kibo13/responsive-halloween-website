@@ -5,6 +5,7 @@
         </header>
 
         <main class="main">
+            <Home />
             <Category />
             <About />
             <Trick />
@@ -16,6 +17,7 @@
 <script>
 import Navbar from '@/components/Navbar'
 
+import Home from '@/blocks/Home'
 import Category from '@/blocks/Category'
 import About from '@/blocks/About'
 import Trick from '@/blocks/Trick'
@@ -26,6 +28,7 @@ export default {
 
     components: {
         Navbar,
+        Home,
         Category,
         About,
         Trick,
