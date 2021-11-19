@@ -14,8 +14,8 @@
 <script>
 import Navbar from '@/components/Navbar'
 
-import Category from '@/pages/Category'
-import About from '@/pages/About'
+import Category from '@/blocks/Category'
+import About from '@/blocks/About'
 
 export default {
     name: 'App',
