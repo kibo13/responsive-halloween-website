@@ -1,0 +1,55 @@
+.trick 
+
+    &__container
+        padding-top: 1rem
+        grid-template-columns: repeat(2, 1fr)
+        gap: 1.5rem
+
+    &__content
+        position: relative
+        padding: 1.5rem 0 1rem 0 
+        background: var(--container-color)
+        border-radius: 1rem 
+        text-align: center
+        overflow: hidden
+        cursor: pointer
+
+        &:hover 
+            .trick__img 
+                transform: translateY(-.5rem)
+            .trick__button
+                right: 0
+
+    &__img 
+        width: 90px
+        transition: .3s
+    
+    &__title 
+        font-size: var(--normal-font-size)
+        font-weight: var(--font-medium)   
+        color: var(--title-color)   
+
+    &__subtitle
+        margin-bottom: var(--mb-0-5)
+        display: block
+        font-size: var(--smaller-font-size)
+        font-weight: var(--font-medium)
+
+    &__price 
+        display: block
+        font-size: var(--normal-font-size)
+        font-weight: var(--font-medium)
+        color: var(--title-color)
+    
+    &__button 
+        position: absolute
+        right: -3rem
+        bottom: 0
+        padding: 0.5rem
+        display: inline-block
+        border-radius: .25rem .25rem .75rem .25rem 
+
+
+    
+
+
