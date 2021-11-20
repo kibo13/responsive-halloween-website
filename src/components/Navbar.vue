@@ -39,7 +39,7 @@ export default {
                 { id: 1, name: 'home' },
                 { id: 2, name: 'about' },
                 { id: 3, name: 'trick' },
-                { id: 4, name: 'new' },
+                { id: 4, name: 'new-arrivals' },
             ],
         }
     },
