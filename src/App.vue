@@ -11,6 +11,7 @@
             <Trick />
             <Discount />
             <NewArrivals />
+            <Newsletter />
         </main>
     </div>
 </template>
@@ -24,6 +25,7 @@ import About from '@/blocks/About'
 import Trick from '@/blocks/Trick'
 import Discount from '@/blocks/Discount'
 import NewArrivals from '@/blocks/NewArrivals'
+import Newsletter from '@/blocks/Newsletter'
 
 export default {
     name: 'App',
@@ -36,6 +38,7 @@ export default {
         Trick,
         Discount,
         NewArrivals,
+        Newsletter,
     },
 
     data() {
