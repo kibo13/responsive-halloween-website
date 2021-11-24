@@ -1,14 +1,46 @@
 .about 
 
     &__container 
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        justify-content: center
+        align-items: center
+        column-gap: 7rem 
         row-gap: 2rem
 
-    &__data 
-        text-align: center
+    &__title
+        margin-left: 0
+        text-align: initial
 
     &__description 
         margin-bottom: var(--mb-2)
+        padding-right: 2rem
 
     &__img 
-        width: 200px
+        width: 350px
         justify-self: center
+
+@media screen and (max-width: 992px)
+    .about 
+
+        &__img 
+            width: 250px
+
+@media screen and (max-width: 767px)
+    .about 
+
+        &__container 
+            grid-template-columns: .9fr
+
+        &__data,
+        &__title
+            text-align: center
+
+        &__title 
+            margin-left: auto
+
+        &__description 
+            padding-right: 0
+
+        &__img 
+            width: 200px
