@@ -60,6 +60,19 @@ button
         max-width: 350px
         text-align: center
 
+.active-link
+    position: relative  
+
+    &::before
+        content: ''
+        position: absolute
+        bottom: -.75rem
+        left: 45%
+        width: 5px
+        height: 5px
+        background-color: var(--title-color)
+        border-radius: 50%
+
 @media screen and (max-width: 992px)
     .container 
         margin-left: var(--mb-1-5)
