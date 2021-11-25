@@ -1,9 +1,9 @@
 <template>
-    <section class="section new-arrivals" id="new-arrivals">
+    <section class="section new-arrivals" id="new">
         <h2 class="section__title">New Arrivals</h2>
 
         <div class="new-arrivals__container container">
-            <div class="swiper-new-arrivals">
+            <div class="swiper swiper-new-arrivals">
                 <div class="swiper-wrapper">
                     <div class="new-arrivals__content swiper-slide" v-for="arrival in arrivals" :key="arrival.id">
                         <div class="new-arrivals__tag">New</div>

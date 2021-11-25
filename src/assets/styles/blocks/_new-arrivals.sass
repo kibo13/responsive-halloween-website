@@ -4,17 +4,17 @@
         padding-top: 1rem
 
     &__img 
-        margin-bottom: var(--mb-0-5)
-        width: 120px
+        margin-bottom: var(--mb-1)
+        width: 150px
         transition: .3s 
     
     &__content 
         position: relative
-        padding: 2rem 0 1.5rem 0 
-        width: 242px
+        padding: 2rem 0
+        width: 310px
         text-align: center
         background: var(--container-color)
-        border-radius: .75rem 
+        border-radius: 1rem
         overflow: hidden
         cursor: pointer
 
@@ -35,11 +35,11 @@
         border-radius: .25rem 
 
     &__title 
-        font-size: var(--normal-font-size)
+        font-size: var(--h3-font-size)
         font-weight: var(--font-medium)
 
     &__subtitle 
-        margin-bottom: var(--mb-0-5)
+        margin-bottom: var(--mb-1)
         display: block
         font-size: var(--small-font-size)
 
@@ -66,4 +66,20 @@
         display: inline-flex
         border-radius: .25rem .25rem .75rem .25rem
 
+@media screen and (max-width: 992px)
+    .new-arrivals 
 
+        &__img 
+            margin-bottom: var(--mb-0-5)
+            width: 120px
+
+        &__content 
+            padding: 2rem 0 1.5rem 0 
+            width: 242px
+            border-radius: .75rem 
+
+        &__title 
+            font-size: var(--normal-font-size)
+
+        &__subtitle 
+            margin-bottom: var(--mb-0-5)
