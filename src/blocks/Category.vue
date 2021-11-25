@@ -2,7 +2,7 @@
     <section class="section category">
         <h2 class="section__title">Favorite Scare Category</h2>
         <div class="category__container container grid">
-            <div class="category__data" v-for="ghost in ghosts" :key="ghost.id">
+            <div class="category__data" v-for="ghost in ghosts" :key="ghost.id" v-scroll-reveal.reset>
                 <img class="category__img" :src="ghost.img" alt="" />
                 <h3 class="category__title">{{ ghost.name }}</h3>
                 <p class="category__description">{{ ghost.description }}</p>

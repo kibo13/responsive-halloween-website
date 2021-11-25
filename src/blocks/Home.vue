@@ -1,6 +1,6 @@
 <template>
     <section class="home container" id="home">
-        <div class="swiper swiper-home">
+        <div class="swiper swiper-home" v-scroll-reveal.reset>
             <div class="swiper-wrapper">
                 <div class="swiper-slide" v-for="ghost in ghosts" :key="ghost.id">
                     <div class="home__content grid">

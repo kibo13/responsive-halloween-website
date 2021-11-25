@@ -1,12 +1,12 @@
 <template>
     <section class="section about" id="about">
         <div class="about__container container grid">
-            <div class="about__data">
+            <div class="about__data" v-scroll-reveal.reset="{ origin: 'left' }">
                 <h2 class="about__title section__title">{{ title }}</h2>
                 <p class="about__description">{{ description }}</p>
                 <a href="#" class="button">Know more</a>
             </div>
-            <img :src="img" alt="" class="about__img" />
+            <img :src="img" alt="" class="about__img" v-scroll-reveal.reset="{ origin: 'right' }" />
         </div>
     </section>
 </template>
