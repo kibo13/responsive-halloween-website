@@ -1,57 +1,54 @@
 .nav 
-    height: var(--header-height)
     display: flex
     justify-content: space-between
     align-items: center
+    height: calc(var(--header-height) + 1.5rem)
 
     &__logo 
         display: flex
         align-items: center
-        column-gap: .5rem
+        column-gap: .5rem 
         font-weight: var(--font-medium)
+        color: var(--title-color)
 
         &-img 
             width: 1.25rem
-    
-    &__link,
-    &__logo,
-    &__toggle,
-    &__close 
-        color: var(--title-color)
 
-    &__toggle 
-        font-size: 1.25rem 
+    &__list 
+        display: flex
+        align-items: center
+        column-gap: 3rem
+
+    &__link 
+        text-transform: capitalize
+        color: var(--title-color)
+        transition: .4s 
+
+        &:hover 
+            color: var(--text-color)
+
+    &__close 
+        position: absolute
+        top: 0.5rem
+        right: 0.7rem
+        display: none
         cursor: pointer
 
     &__img 
         position: absolute
         top: 0
         left: 0
+        display: none
         width: 100px
 
-    &__close 
-        position: absolute
-        top: 0.5rem
-        right: 0.7rem
-        font-size: 1.8rem
+    &__toggle 
+        display: none
         cursor: pointer
 
-    &__list 
-        display: flex
-        flex-direction: column
-        align-items: center
-        row-gap: 1.5rem
-
-    &__link 
-        text-transform: uppercase
-        font-weight: var(--font-black)
-        transition: .4s 
-
-        &:hover 
-            color: var(--text-color)
-
 @media screen and (max-width: 767px)
-    .nav
+    .nav 
+        height: var(--header-height)
+
         &__menu 
             position: fixed
             top: -150%
@@ -62,3 +59,16 @@
             border-radius: 0 0 1.5rem 1.5rem 
             transition: .4s 
             z-index: var(--z-fixed)
+
+        &__list 
+            flex-direction: column
+            row-gap: 1.5rem
+
+        &__link
+            text-transform: uppercase
+            font-weight: var(--font-black)
+
+        &__close,
+        &__img,
+        &__toggle
+            display: block
