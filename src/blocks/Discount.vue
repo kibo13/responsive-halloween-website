@@ -1,5 +1,5 @@
 <template>
-    <section class="section discount" id="discount">
+    <section class="section discount">
         <div class="discount__container container grid">
             <div class="discount__data" v-scroll-reveal.reset="{ origin: 'right' }">
                 <h2 class="discount__title">50% Discount <span>on new products</span></h2>
