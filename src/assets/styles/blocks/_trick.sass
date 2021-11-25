@@ -2,14 +2,16 @@
 
     &__container
         padding-top: 1rem
-        grid-template-columns: repeat(2, 1fr)
-        gap: 1.5rem
+        display: grid
+        grid-template-columns: repeat(3, 200px)
+        justify-content: center
+        gap: 3.5rem
 
     &__content
         position: relative
         padding: 1.5rem 0 1rem 0 
         background: var(--container-color)
-        border-radius: 1rem 
+        border-radius: 1.5rem 
         text-align: center
         overflow: hidden
         cursor: pointer
@@ -21,11 +23,11 @@
                 right: 0
 
     &__img 
-        width: 90px
+        width: 110px
         transition: .3s
     
     &__title 
-        font-size: var(--normal-font-size)
+        font-size: var(--h3-font-size)
         font-weight: var(--font-medium)   
         color: var(--title-color)   
 
@@ -49,7 +51,31 @@
         display: inline-block
         border-radius: .25rem .25rem .75rem .25rem 
 
+@media screen and (max-width: 992px)
+    .trick 
 
-    
+        &__container 
+            gap: 2rem
 
+        &__content 
+            border-radius: 1rem
+
+        &__img 
+            width: 90px
+
+        &__title 
+            font-size: var(--normal-font-size)
+
+@media screen and (max-width: 767px)
+    .trick 
+
+        &__container
+            grid-template-columns: repeat(2, 1fr)
+            gap: 1.5rem
+
+@media screen and (max-width: 320px)
+    .trick 
+
+        &__container 
+            grid-template-columns: .8fr
 
